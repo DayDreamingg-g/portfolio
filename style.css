@@ -1,0 +1,49 @@
+body {
+    background-color: #5a4e42;
+    color: #fff4e6;
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+    color: #f3d5a5;
+}
+
+#quick-nav {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+nav a {
+    color: #f0c987;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #fff4e6;
+    text-decoration: underline;
+}
+
+#about-me {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #c49a6c;
+    box-sizing: border-box;
+}
+
+#about-me p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
