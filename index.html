@@ -5,59 +5,329 @@
         <title>My Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
         <header>
             <h1>Welcome to My Portfolio</h1>
             <p>This is a showcase of my work and projects.</p>
+
             <h2 id="quick-nav">Quick Navigation</h2>
+
             <nav>
-                <a href="#about-me">About Me</a>|
-                <a href="#skills">My Skills</a>|
-                <a href="#projects">My Projects</a>|
+                <a href="#about-me">About Me</a>
+                <a href="#skills">My Skills</a>
+                <a href="#projects">My Projects</a>
                 <a href="#contact">Contact Me</a>
-            </nav> 
+            </nav>
         </header>
+
         <main>
             <section id="about-me">
                 <h2>About Me</h2>
-                <p>I'm a Computer Science student from Ukraine focused on AI automation, backend development, and practical software engineering.</p>
-                <p>I build projects that go beyond tutorial examples — from AI-powered automation workflows and backend APIs to full-stack web applications that connect external services, databases, messaging platforms, and AI models.</p>
+
+                <p>
+                    I'm a Computer Science student from Ukraine focused on AI automation,
+                    backend development, and practical software engineering.
+                </p>
+
+                <p>
+                    I build projects that go beyond tutorial examples — from AI-powered
+                    automation workflows and backend APIs to full-stack web applications
+                    that connect external services, databases, messaging platforms,
+                    and AI models.
+                </p>
             </section>
+
             <section id="skills">
                 <h2>Skills</h2>
-                <ul>
-                    <li>🤖 <strong>AI & Automation:</strong> n8n, OpenAI, AI Agents, LLM workflows</li>
-                    <li>💻 <strong>Full-Stack:</strong> React, Next.js, TypeScript, JavaScript</li>
-                    <li>⚙️ <strong>Backend:</strong> ASP.NET Core, REST APIs, CQRS, MediatR</li>
-                    <li>🗄️ <strong>Data:</strong> PostgreSQL, SQLite, SQL, Prisma, Entity Framework Core</li>
-                    <li>🔗 <strong>Integrations:</strong> Telegram Bot API, Google Sheets, OAuth 2.0, Webhooks</li>
-                    <li>🛠️ <strong>Tools:</strong> Git, GitHub, GitHub Actions, Docker, Linux, Vercel</li>
-                    <li>🔐 <strong>Additional interest:</strong> Cybersecurity & Application Security</li>
-                    <li>🌍 <strong>Languages:</strong> Ukrainian, Russian, English (B1)</li>
-                    <li>💼 <strong>Open to:</strong> Remote Junior Developer, AI Automation, and Internship opportunities</li>
-                </ul>
+
+                <div id="skills-grid">
+
+                    <!-- AI & AUTOMATION -->
+
+                    <details class="skill-card">
+                        <summary>🤖 AI & Automation</summary>
+
+                        <div class="skill-content">
+                            <p>n8n, OpenAI, AI Agents, LLM workflows</p>
+
+                            <p><strong>Used in:</strong></p>
+
+                            <ul>
+                                <li>AI Customer Support Automation</li>
+                                <li>n8n AI Lead Automation</li>
+                                <li>n8n Telegram AI Script Generator</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- FULL-STACK -->
+
+                    <details class="skill-card">
+                        <summary>💻 Full-Stack</summary>
+
+                        <div class="skill-content">
+                            <p>React, Next.js, TypeScript, JavaScript</p>
+
+                            <p><strong>Used in:</strong></p>
+
+                            <ul>
+                                <li>Beauty Booking Platform</li>
+                                <li>Portfolio Website</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- BACKEND -->
+
+                    <details class="skill-card">
+                        <summary>⚙️ Backend</summary>
+
+                        <div class="skill-content">
+                            <p>ASP.NET Core, REST APIs, CQRS, MediatR</p>
+
+                            <p><strong>Used in:</strong></p>
+
+                            <ul>
+                                <li>MiniBank Ledger API</li>
+                                <li>Beauty Booking Platform</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- DATA -->
+
+                    <details class="skill-card">
+                        <summary>🗄️ Data</summary>
+
+                        <div class="skill-content">
+                            <p>
+                                PostgreSQL, SQLite, SQL, Prisma,
+                                Entity Framework Core
+                            </p>
+
+                            <p><strong>Used in:</strong></p>
+
+                            <ul>
+                                <li>Beauty Booking Platform</li>
+                                <li>MiniBank Ledger API</li>
+                                <li>TimeMachine.Agent</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- INTEGRATIONS -->
+
+                    <details class="skill-card">
+                        <summary>🔗 Integrations</summary>
+
+                        <div class="skill-content">
+                            <p>
+                                Telegram Bot API, Google Sheets,
+                                OAuth 2.0, Webhooks
+                            </p>
+
+                            <p><strong>Used in:</strong></p>
+
+                            <ul>
+                                <li>AI Customer Support Automation</li>
+                                <li>n8n AI Lead Automation</li>
+                                <li>n8n Telegram AI Script Generator</li>
+                                <li>Beauty Booking Platform</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- TOOLS -->
+
+                    <details class="skill-card">
+                        <summary>🛠️ Tools</summary>
+
+                        <div class="skill-content">
+                            <p>
+                                Git, GitHub, GitHub Actions,
+                                Docker, Linux, Vercel
+                            </p>
+
+                            <p><strong>Used for:</strong></p>
+
+                            <ul>
+                                <li>Version control</li>
+                                <li>Deployment</li>
+                                <li>Containerization</li>
+                                <li>Development environments</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- CYBERSECURITY -->
+
+                    <details class="skill-card">
+                        <summary>🔐 Cybersecurity</summary>
+
+                        <div class="skill-content">
+                            <p>
+                                Cybersecurity fundamentals,
+                                networking and Application Security
+                            </p>
+
+                            <p><strong>Used in:</strong></p>
+
+                            <ul>
+                                <li>CyberLab</li>
+                                <li>Personal security labs</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- LANGUAGES -->
+
+                    <details class="skill-card">
+                        <summary>🌍 Languages</summary>
+
+                        <div class="skill-content">
+                            <ul>
+                                <li>Ukrainian</li>
+                                <li>Russian</li>
+                                <li>English (B1)</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- OPEN TO -->
+
+                    <details class="skill-card">
+                        <summary>💼 Open to</summary>
+
+                        <div class="skill-content">
+                            <ul>
+                                <li>Remote Junior Developer</li>
+                                <li>AI Automation</li>
+                                <li>Internship opportunities</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                </div>
             </section>
+
             <section id="projects">
                 <h2>Projects</h2>
+
                 <ul>
-                    <li><a href="https://github.com/DayDreamingg-g/AI-Customer-Support-Automation">AI Customer Support Automation</a><br><p>AI-powered customer support automation built with n8n, OpenAI and PostgreSQL. Automatically validates tickets, generates tags, assigns priority and creates summaries.</p></li>
-                    <li><a href="https://github.com/DayDreamingg-g/n8n-ai-lead-automation">n8n AI Lead Automation</a><br><p>AI-powered lead qualification workflow built with n8n, OpenAI, Google Sheets and Telegram. Scores leads by budget and urgency, classifies them as Cold/Warm/Hot, and sends priority alerts.</p></li>
-                    <li><a href="https://github.com/DayDreamingg-g/n8n-telegram-ai-script-generator">n8n Telegram AI Script Generator</a><br><p>AI-powered Telegram bot built with n8n and OpenAI that generates short-form video scripts, stores generation history, and supports bot commands.</p></li>
-                    <li><a href="https://github.com/DayDreamingg-g/beauty-booking-site">Beauty Booking Platform</a><br><p>Full-stack booking platform for beauty salons built with Next.js, TypeScript, Prisma and PostgreSQL.</p></li>
-                    <li><a href="https://github.com/DayDreamingg-g/TimeMachine.Agent">TimeMachine.Agent</a><br><p>Windows productivity tracker built with C#/.NET, SQLite and WinAPI. Tracks active applications, idle time and focus sessions with productivity analytics.</p></li>
-                    <li><a href="https://github.com/DayDreamingg-g/CyberLab">CyberLab</a><br><p>Personal cybersecurity learning lab with practical exercises, notes and reports.</p></li>
-                    <li><a href="https://github.com/DayDreamingg-g/MiniBank-Ledger-API">MiniBank Ledger API</a><br><p>Backend financial ledger API built with ASP.NET Core, Clean Architecture, CQRS, EF Core and automated tests.</p></li>
-                    <li><a href="https://github.com/DayDreamingg-g/keyboard">Keyboard Prank App (C++ / WinAPI)</a><br><p>Educational Windows C++ project exploring low-level keyboard hooks in WinAPI.</p></li>
+                    <li>
+                        <a href="https://github.com/DayDreamingg-g/AI-Customer-Support-Automation">
+                            AI Customer Support Automation
+                        </a>
+
+                        <p>
+                            AI-powered customer support automation built with n8n,
+                            OpenAI and PostgreSQL. Automatically validates tickets,
+                            generates tags, assigns priority and creates summaries.
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/DayDreamingg-g/n8n-ai-lead-automation">
+                            n8n AI Lead Automation
+                        </a>
+
+                        <p>
+                            AI-powered lead qualification workflow built with n8n,
+                            OpenAI, Google Sheets and Telegram. Scores leads by budget
+                            and urgency, classifies them as Cold/Warm/Hot, and sends
+                            priority alerts.
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/DayDreamingg-g/n8n-telegram-ai-script-generator">
+                            n8n Telegram AI Script Generator
+                        </a>
+
+                        <p>
+                            AI-powered Telegram bot built with n8n and OpenAI that
+                            generates short-form video scripts, stores generation
+                            history, and supports bot commands.
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/DayDreamingg-g/beauty-booking-site">
+                            Beauty Booking Platform
+                        </a>
+
+                        <p>
+                            Full-stack booking platform for beauty salons built with
+                            Next.js, TypeScript, Prisma and PostgreSQL.
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/DayDreamingg-g/TimeMachine.Agent">
+                            TimeMachine.Agent
+                        </a>
+
+                        <p>
+                            Windows productivity tracker built with C#/.NET, SQLite
+                            and WinAPI. Tracks active applications, idle time and
+                            focus sessions with productivity analytics.
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/DayDreamingg-g/CyberLab">
+                            CyberLab
+                        </a>
+
+                        <p>
+                            Personal cybersecurity learning lab with practical
+                            exercises, notes and reports.
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/DayDreamingg-g/MiniBank-Ledger-API">
+                            MiniBank Ledger API
+                        </a>
+
+                        <p>
+                            Backend financial ledger API built with ASP.NET Core,
+                            Clean Architecture, CQRS, EF Core and automated tests.
+                        </p>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/DayDreamingg-g/keyboard">
+                            Keyboard Prank App (C++ / WinAPI)
+                        </a>
+
+                        <p>
+                            Educational Windows C++ project exploring low-level
+                            keyboard hooks in WinAPI.
+                        </p>
+                    </li>
                 </ul>
             </section>
         </main>
+
         <footer>
             <h2>Contact</h2>
+
             <div id="contact">
-                <a href="mailto:oleksandr.stepanov.tech@gmail.com">Gmail</a>
-                <a href="https://github.com/DayDreamingg-g">GitHub</a>
-                <a href="https://www.linkedin.com/in/daydreamingg/">LinkedIn</a>
+                <a href="mailto:oleksandr.stepanov.tech@gmail.com">
+                    Gmail
+                </a>
+
+                <a href="https://github.com/DayDreamingg-g">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/daydreamingg/">
+                    LinkedIn
+                </a>
             </div>
+
             <p>© 2026 Oleksandr Stepanov</p>
         </footer>
     </body>
