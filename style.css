@@ -619,7 +619,26 @@ main,
 .quote-card {
     position: relative;
     overflow: hidden;
-    padding: 22px;
+    min-height: 118px;
+    padding: 22px 86px 22px 22px;
+}
+
+.quote-card::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    bottom: 18px;
+    left: 0;
+    width: 2px;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        rgba(218, 207, 233, 0.55) 25%,
+        rgba(218, 207, 233, 0.2) 75%,
+        transparent
+    );
+    box-shadow: 0 0 18px rgba(194, 181, 218, 0.18);
+    pointer-events: none;
 }
 
 .quote-card::after {
@@ -636,22 +655,32 @@ main,
 
 .quote-mark {
     position: absolute;
-    top: 4px;
-    right: 16px;
-    color: rgba(218, 207, 233, 0.08);
-    font-family: Georgia, serif;
-    font-size: 90px;
+    z-index: 0;
+    top: 5px;
+    right: 18px;
+    width: 56px;
+    color: rgba(218, 207, 233, 0.16);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 78px;
+    font-weight: 700;
     line-height: 1;
+    text-align: center;
+    text-shadow: 0 0 26px rgba(194, 181, 218, 0.12);
+    user-select: none;
+    pointer-events: none;
 }
 
 .quote-card p {
     position: relative;
     z-index: 1;
+    width: 100%;
+    max-width: 100%;
     margin: 0;
     color: #d7d0dd;
     font-size: 15px;
     font-weight: 650;
     line-height: 1.5;
+    overflow-wrap: anywhere;
 }
 
 .quote-signature {
@@ -1205,6 +1234,18 @@ h2 {
 
     .mini-terminal {
         grid-column: auto;
+    }
+
+    .quote-card {
+        min-height: 110px;
+        padding: 20px 70px 20px 20px;
+    }
+
+    .quote-mark {
+        top: 7px;
+        right: 12px;
+        width: 50px;
+        font-size: 68px;
     }
 
     .section-card,
