@@ -16,52 +16,177 @@
     </head>
 
     <body>
-        <header>
-            <h1>Oleksandr Stepanov</h1>
-            <p>
-                Computer Science student focused on AI automation, backend development,
-                and practical software engineering.
-            </p>
+        <div class="background-glow background-glow-one" aria-hidden="true"></div>
+        <div class="background-glow background-glow-two" aria-hidden="true"></div>
 
-            <h2 id="quick-nav">Quick Navigation</h2>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a class="nav-brand" href="#top" aria-label="Go to top of page">
+                <span class="brand-mark">OS</span>
+                <span>Oleksandr Stepanov</span>
+            </a>
 
-            <nav aria-label="Primary navigation">
-                <a href="#about-me">About Me</a>
-                <a href="#skills">My Skills</a>
-                <a href="#projects">My Projects</a>
-                <a href="#contact">Contact Me</a>
-            </nav>
+            <div class="nav-links">
+                <a href="#about-me">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <header id="top" class="hero">
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">PORTFOLIO // 2026</p>
+
+                    <div class="availability-badge">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        Open to remote opportunities
+                    </div>
+
+                    <h1>
+                        I build software that
+                        <span class="accent-text">automates real work.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm <strong>Oleksandr Stepanov</strong>, a Computer Science student
+                        from Ukraine focused on AI automation, backend development,
+                        and practical software engineering.
+                    </p>
+
+                    <div class="hero-tags" aria-label="Main areas of expertise">
+                        <span>AI Automation</span>
+                        <span>Backend</span>
+                        <span>Full-Stack</span>
+                        <span>Integrations</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">
+                            View Projects
+                            <span aria-hidden="true">↓</span>
+                        </a>
+
+                        <a
+                            class="button button-secondary"
+                            href="https://github.com/DayDreamingg-g"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="terminal" aria-label="Developer profile summary">
+                    <div class="terminal-header">
+                        <div class="terminal-dots" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="terminal-title">oleksandr@portfolio:~</span>
+                    </div>
+
+                    <div class="terminal-body">
+                        <p><span class="terminal-prompt">$</span> whoami</p>
+                        <p class="terminal-output">Oleksandr Stepanov</p>
+
+                        <p><span class="terminal-prompt">$</span> cat focus.txt</p>
+                        <p class="terminal-output">
+                            AI Automation<br>
+                            Backend Development<br>
+                            Full-Stack Applications
+                        </p>
+
+                        <p><span class="terminal-prompt">$</span> current_status</p>
+                        <p class="terminal-output terminal-success">
+                            Open to remote junior roles & internships
+                        </p>
+
+                        <p class="terminal-last-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-cursor" aria-hidden="true"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <main>
-            <section id="about-me" aria-labelledby="about-title">
-                <h2 id="about-title">About Me</h2>
+            <section id="about-me" class="section-card" aria-labelledby="about-title">
+                <div class="section-heading">
+                    <p class="section-number">01</p>
+                    <div>
+                        <p class="section-kicker">WHO I AM</p>
+                        <h2 id="about-title">About Me</h2>
+                    </div>
+                </div>
 
-                <p>
-                    I'm a Computer Science student from Ukraine focused on AI automation,
-                    backend development, and practical software engineering.
-                </p>
+                <div class="about-grid">
+                    <div class="about-copy">
+                        <p class="about-lead">
+                            I learn by building things that actually have to work.
+                        </p>
 
-                <p>
-                    I build projects that go beyond tutorial examples — from AI-powered
-                    automation workflows and backend APIs to full-stack web applications
-                    that connect external services, databases, messaging platforms,
-                    and AI models.
-                </p>
+                        <p>
+                            My projects go beyond tutorial examples — from AI-powered
+                            automation workflows and backend APIs to full-stack web
+                            applications that connect external services, databases,
+                            messaging platforms, and AI models.
+                        </p>
+
+                        <p>
+                            I enjoy turning repetitive processes into automated systems,
+                            designing clean backend logic, and understanding how every
+                            part of an application connects from request to database.
+                        </p>
+                    </div>
+
+                    <div class="focus-list" aria-label="Development focus">
+                        <article class="focus-item">
+                            <span class="focus-icon" aria-hidden="true">01</span>
+                            <div>
+                                <h3>Automation first</h3>
+                                <p>n8n workflows, AI agents, APIs, webhooks, and integrations.</p>
+                            </div>
+                        </article>
+
+                        <article class="focus-item">
+                            <span class="focus-icon" aria-hidden="true">02</span>
+                            <div>
+                                <h3>Backend mindset</h3>
+                                <p>REST APIs, databases, application logic, and clean architecture.</p>
+                            </div>
+                        </article>
+
+                        <article class="focus-item">
+                            <span class="focus-icon" aria-hidden="true">03</span>
+                            <div>
+                                <h3>Build & ship</h3>
+                                <p>Git, Docker, Linux, Vercel, deployment, and real project iteration.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </section>
 
-            <section id="skills" aria-labelledby="skills-title">
-                <h2 id="skills-title">Skills</h2>
+            <section id="skills" class="section-card" aria-labelledby="skills-title">
+                <div class="section-heading">
+                    <p class="section-number">02</p>
+                    <div>
+                        <p class="section-kicker">WHAT I USE</p>
+                        <h2 id="skills-title">Skills & Technologies</h2>
+                    </div>
+                </div>
 
                 <div id="skills-grid">
                     <details class="skill-card">
                         <summary>🤖 AI &amp; Automation</summary>
-
                         <div class="skill-content">
                             <p>n8n, OpenAI, AI Agents, LLM workflows</p>
-
                             <p><strong>Used in:</strong></p>
-
                             <ul>
                                 <li>AI Customer Support Automation</li>
                                 <li>n8n AI Lead Automation</li>
@@ -72,12 +197,9 @@
 
                     <details class="skill-card">
                         <summary>💻 Full-Stack</summary>
-
                         <div class="skill-content">
                             <p>React, Next.js, TypeScript, JavaScript</p>
-
                             <p><strong>Used in:</strong></p>
-
                             <ul>
                                 <li>Beauty Booking Platform</li>
                                 <li>Portfolio Website</li>
@@ -87,12 +209,9 @@
 
                     <details class="skill-card">
                         <summary>⚙️ Backend</summary>
-
                         <div class="skill-content">
                             <p>ASP.NET Core, REST APIs, CQRS, MediatR</p>
-
                             <p><strong>Used in:</strong></p>
-
                             <ul>
                                 <li>MiniBank Ledger API</li>
                                 <li>Beauty Booking Platform</li>
@@ -102,15 +221,9 @@
 
                     <details class="skill-card">
                         <summary>🗄️ Data</summary>
-
                         <div class="skill-content">
-                            <p>
-                                PostgreSQL, SQLite, SQL, Prisma,
-                                Entity Framework Core
-                            </p>
-
+                            <p>PostgreSQL, SQLite, SQL, Prisma, Entity Framework Core</p>
                             <p><strong>Used in:</strong></p>
-
                             <ul>
                                 <li>Beauty Booking Platform</li>
                                 <li>MiniBank Ledger API</li>
@@ -121,15 +234,9 @@
 
                     <details class="skill-card">
                         <summary>🔗 Integrations</summary>
-
                         <div class="skill-content">
-                            <p>
-                                Telegram Bot API, Google Sheets,
-                                OAuth 2.0, Webhooks
-                            </p>
-
+                            <p>Telegram Bot API, Google Sheets, OAuth 2.0, Webhooks</p>
                             <p><strong>Used in:</strong></p>
-
                             <ul>
                                 <li>AI Customer Support Automation</li>
                                 <li>n8n AI Lead Automation</li>
@@ -141,15 +248,9 @@
 
                     <details class="skill-card">
                         <summary>🛠️ Tools</summary>
-
                         <div class="skill-content">
-                            <p>
-                                Git, GitHub, GitHub Actions,
-                                Docker, Linux, Vercel
-                            </p>
-
+                            <p>Git, GitHub, GitHub Actions, Docker, Linux, Vercel</p>
                             <p><strong>Used for:</strong></p>
-
                             <ul>
                                 <li>Version control</li>
                                 <li>Deployment</li>
@@ -161,15 +262,9 @@
 
                     <details class="skill-card">
                         <summary>🔐 Cybersecurity</summary>
-
                         <div class="skill-content">
-                            <p>
-                                Cybersecurity fundamentals,
-                                networking, and application security
-                            </p>
-
+                            <p>Cybersecurity fundamentals, networking, and application security</p>
                             <p><strong>Used in:</strong></p>
-
                             <ul>
                                 <li>CyberLab</li>
                                 <li>Personal security labs</li>
@@ -179,7 +274,6 @@
 
                     <details class="skill-card">
                         <summary>🌍 Languages</summary>
-
                         <div class="skill-content">
                             <ul>
                                 <li>Ukrainian</li>
@@ -191,7 +285,6 @@
 
                     <details class="skill-card">
                         <summary>💼 Open to</summary>
-
                         <div class="skill-content">
                             <ul>
                                 <li>Remote Junior Developer roles</li>
@@ -203,11 +296,33 @@
                 </div>
             </section>
 
-            <section id="projects" aria-labelledby="projects-title">
-                <h2 id="projects-title">Projects</h2>
+            <section id="projects" class="section-card" aria-labelledby="projects-title">
+                <div class="section-heading projects-heading">
+                    <div class="section-heading-left">
+                        <p class="section-number">03</p>
+                        <div>
+                            <p class="section-kicker">SELECTED WORK</p>
+                            <h2 id="projects-title">Projects</h2>
+                        </div>
+                    </div>
+
+                    <a
+                        class="section-link"
+                        href="https://github.com/DayDreamingg-g"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        All repositories ↗
+                    </a>
+                </div>
 
                 <div id="projects-grid">
-                    <article class="project-card">
+                    <article class="project-card featured-project">
+                        <div class="project-topline">
+                            <span class="project-label">FEATURED</span>
+                            <span class="project-index">01</span>
+                        </div>
+
                         <h3>AI Customer Support Automation</h3>
 
                         <p>
@@ -216,7 +331,14 @@
                             generates tags, assigns priority, and creates summaries.
                         </p>
 
+                        <div class="project-stack" aria-label="Technologies used">
+                            <span>n8n</span>
+                            <span>OpenAI</span>
+                            <span>PostgreSQL</span>
+                        </div>
+
                         <a
+                            class="project-link"
                             href="https://github.com/DayDreamingg-g/AI-Customer-Support-Automation"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -226,7 +348,12 @@
                         </a>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card featured-project">
+                        <div class="project-topline">
+                            <span class="project-label">FEATURED</span>
+                            <span class="project-index">02</span>
+                        </div>
+
                         <h3>n8n AI Lead Automation</h3>
 
                         <p>
@@ -236,7 +363,15 @@
                             priority alerts.
                         </p>
 
+                        <div class="project-stack" aria-label="Technologies used">
+                            <span>n8n</span>
+                            <span>OpenAI</span>
+                            <span>Google Sheets</span>
+                            <span>Telegram</span>
+                        </div>
+
                         <a
+                            class="project-link"
                             href="https://github.com/DayDreamingg-g/n8n-ai-lead-automation"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -246,26 +381,12 @@
                         </a>
                     </article>
 
-                    <article class="project-card">
-                        <h3>n8n Telegram AI Script Generator</h3>
+                    <article class="project-card featured-project">
+                        <div class="project-topline">
+                            <span class="project-label">FEATURED</span>
+                            <span class="project-index">03</span>
+                        </div>
 
-                        <p>
-                            AI-powered Telegram bot built with n8n and OpenAI that
-                            generates short-form video scripts, stores generation
-                            history, and supports bot commands.
-                        </p>
-
-                        <a
-                            href="https://github.com/DayDreamingg-g/n8n-telegram-ai-script-generator"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="View n8n Telegram AI Script Generator on GitHub"
-                        >
-                            View on GitHub
-                        </a>
-                    </article>
-
-                    <article class="project-card">
                         <h3>Beauty Booking Platform</h3>
 
                         <p>
@@ -273,7 +394,15 @@
                             Next.js, TypeScript, Prisma, and PostgreSQL.
                         </p>
 
+                        <div class="project-stack" aria-label="Technologies used">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Prisma</span>
+                            <span>PostgreSQL</span>
+                        </div>
+
                         <a
+                            class="project-link"
                             href="https://github.com/DayDreamingg-g/beauty-booking-site"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -284,6 +413,42 @@
                     </article>
 
                     <article class="project-card">
+                        <div class="project-topline">
+                            <span class="project-label project-label-secondary">AUTOMATION</span>
+                            <span class="project-index">04</span>
+                        </div>
+
+                        <h3>n8n Telegram AI Script Generator</h3>
+
+                        <p>
+                            AI-powered Telegram bot built with n8n and OpenAI that
+                            generates short-form video scripts, stores generation
+                            history, and supports bot commands.
+                        </p>
+
+                        <div class="project-stack" aria-label="Technologies used">
+                            <span>n8n</span>
+                            <span>OpenAI</span>
+                            <span>Telegram</span>
+                        </div>
+
+                        <a
+                            class="project-link"
+                            href="https://github.com/DayDreamingg-g/n8n-telegram-ai-script-generator"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View n8n Telegram AI Script Generator on GitHub"
+                        >
+                            View on GitHub
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-topline">
+                            <span class="project-label project-label-secondary">DESKTOP</span>
+                            <span class="project-index">05</span>
+                        </div>
+
                         <h3>TimeMachine.Agent</h3>
 
                         <p>
@@ -292,7 +457,15 @@
                             focus sessions with productivity analytics.
                         </p>
 
+                        <div class="project-stack" aria-label="Technologies used">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>SQLite</span>
+                            <span>WinAPI</span>
+                        </div>
+
                         <a
+                            class="project-link"
                             href="https://github.com/DayDreamingg-g/TimeMachine.Agent"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -303,6 +476,11 @@
                     </article>
 
                     <article class="project-card">
+                        <div class="project-topline">
+                            <span class="project-label project-label-secondary">SECURITY</span>
+                            <span class="project-index">06</span>
+                        </div>
+
                         <h3>CyberLab</h3>
 
                         <p>
@@ -310,7 +488,14 @@
                             exercises, notes, and reports.
                         </p>
 
+                        <div class="project-stack" aria-label="Technologies used">
+                            <span>Linux</span>
+                            <span>Networking</span>
+                            <span>Security</span>
+                        </div>
+
                         <a
+                            class="project-link"
                             href="https://github.com/DayDreamingg-g/CyberLab"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -321,6 +506,11 @@
                     </article>
 
                     <article class="project-card">
+                        <div class="project-topline">
+                            <span class="project-label project-label-secondary">BACKEND</span>
+                            <span class="project-index">07</span>
+                        </div>
+
                         <h3>MiniBank Ledger API</h3>
 
                         <p>
@@ -328,7 +518,14 @@
                             Clean Architecture, CQRS, EF Core, and automated tests.
                         </p>
 
+                        <div class="project-stack" aria-label="Technologies used">
+                            <span>ASP.NET Core</span>
+                            <span>CQRS</span>
+                            <span>EF Core</span>
+                        </div>
+
                         <a
+                            class="project-link"
                             href="https://github.com/DayDreamingg-g/MiniBank-Ledger-API"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -339,6 +536,11 @@
                     </article>
 
                     <article class="project-card">
+                        <div class="project-topline">
+                            <span class="project-label project-label-secondary">C++</span>
+                            <span class="project-index">08</span>
+                        </div>
+
                         <h3>Keyboard Prank App</h3>
 
                         <p>
@@ -346,7 +548,13 @@
                             keyboard hooks in WinAPI.
                         </p>
 
+                        <div class="project-stack" aria-label="Technologies used">
+                            <span>C++</span>
+                            <span>WinAPI</span>
+                        </div>
+
                         <a
+                            class="project-link"
                             href="https://github.com/DayDreamingg-g/keyboard"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -359,37 +567,42 @@
             </section>
         </main>
 
-        <footer>
-            <h2>Contact</h2>
+        <footer id="contact" class="footer-card">
+            <div class="footer-copy">
+                <p class="section-kicker">LET'S BUILD SOMETHING</p>
+                <h2>Have a project or opportunity?</h2>
+                <p>
+                    I'm open to remote junior developer, AI automation,
+                    and internship opportunities.
+                </p>
+            </div>
 
-            <div id="contact">
+            <div class="contact-links">
                 <a
+                    class="button button-primary"
                     href="mailto:oleksandr.stepanov.tech@gmail.com"
                     aria-label="Send an email to Oleksandr Stepanov"
                 >
-                    Gmail
+                    Email Me
+                    <span aria-hidden="true">↗</span>
                 </a>
 
                 <a
-                    href="https://github.com/DayDreamingg-g"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Open Oleksandr Stepanov's GitHub profile"
-                >
-                    GitHub
-                </a>
-
-                <a
+                    class="button button-secondary"
                     href="https://www.linkedin.com/in/daydreamingg/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Open Oleksandr Stepanov's LinkedIn profile"
                 >
                     LinkedIn
+                    <span aria-hidden="true">↗</span>
                 </a>
             </div>
 
-            <p>&copy; 2026 Oleksandr Stepanov</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Oleksandr Stepanov</p>
+                <a href="#top">Back to top ↑</a>
+            </div>
         </footer>
     </body>
 </html>
