@@ -47,7 +47,9 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-main {
+header,
+main,
+footer {
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -109,7 +111,6 @@ main section {
     transition: transform 0.3s ease;
 }
 
-
 .skill-card summary:hover {
     background-color: #2b2933;
     color: #eeeaf2;
@@ -137,4 +138,99 @@ main section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.project-card {
+    background-color: #1f1e25;
+    border: 1px solid #6e6383;
+    border-radius: 12px;
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.project-card:hover {
+    background-color: #2b2933;
+    border-color: #acaab1;
+
+    transform: translateY(-2px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #acaab1;
+}
+
+.project-card p {
+    line-height: 1.4;
+}
+
+.project-card a {
+    color: #acaab1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-card a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+
+    background-color: #25242c;
+    border: 1px solid #6e6383;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+#contact {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    padding: 10px 18px;
+
+    color: #acaab1;
+    background-color: #1f1e25;
+
+    border: 1px solid #6e6383;
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+#contact a:hover {
+    color: #ffffff;
+    background-color: #35313f;
+    border-color: #acaab1;
+
+    transform: translateY(-2px);
+}
+
+footer p {
+    margin-bottom: 0;
+    color: #acaab1;
 }
