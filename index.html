@@ -2,18 +2,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>My Portfolio Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="description"
+            content="Portfolio of Oleksandr Stepanov, a Computer Science student focused on AI automation, backend development, full-stack applications, and cybersecurity."
+        >
+        <meta name="author" content="Oleksandr Stepanov">
+        <meta name="theme-color" content="#17171c">
+
+        <title>Oleksandr Stepanov | AI Automation & Software Development</title>
+
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is a showcase of my work and projects.</p>
+            <h1>Oleksandr Stepanov</h1>
+            <p>
+                Computer Science student focused on AI automation, backend development,
+                and practical software engineering.
+            </p>
 
             <h2 id="quick-nav">Quick Navigation</h2>
 
-            <nav>
+            <nav aria-label="Primary navigation">
                 <a href="#about-me">About Me</a>
                 <a href="#skills">My Skills</a>
                 <a href="#projects">My Projects</a>
@@ -22,8 +34,8 @@
         </header>
 
         <main>
-            <section id="about-me">
-                <h2>About Me</h2>
+            <section id="about-me" aria-labelledby="about-title">
+                <h2 id="about-title">About Me</h2>
 
                 <p>
                     I'm a Computer Science student from Ukraine focused on AI automation,
@@ -38,13 +50,12 @@
                 </p>
             </section>
 
-            <section id="skills">
-                <h2>Skills</h2>
+            <section id="skills" aria-labelledby="skills-title">
+                <h2 id="skills-title">Skills</h2>
 
                 <div id="skills-grid">
-
                     <details class="skill-card">
-                        <summary>🤖 AI & Automation</summary>
+                        <summary>🤖 AI &amp; Automation</summary>
 
                         <div class="skill-content">
                             <p>n8n, OpenAI, AI Agents, LLM workflows</p>
@@ -154,7 +165,7 @@
                         <div class="skill-content">
                             <p>
                                 Cybersecurity fundamentals,
-                                networking and Application Security
+                                networking, and application security
                             </p>
 
                             <p><strong>Used in:</strong></p>
@@ -183,31 +194,34 @@
 
                         <div class="skill-content">
                             <ul>
-                                <li>Remote Junior Developer</li>
-                                <li>AI Automation</li>
+                                <li>Remote Junior Developer roles</li>
+                                <li>AI Automation roles</li>
                                 <li>Internship opportunities</li>
                             </ul>
                         </div>
                     </details>
-
                 </div>
             </section>
 
-            <section id="projects">
-                <h2>Projects</h2>
+            <section id="projects" aria-labelledby="projects-title">
+                <h2 id="projects-title">Projects</h2>
 
                 <div id="projects-grid">
-
                     <article class="project-card">
                         <h3>AI Customer Support Automation</h3>
 
                         <p>
                             AI-powered customer support automation built with n8n,
-                            OpenAI and PostgreSQL. Automatically validates tickets,
-                            generates tags, assigns priority and creates summaries.
+                            OpenAI, and PostgreSQL. Automatically validates tickets,
+                            generates tags, assigns priority, and creates summaries.
                         </p>
 
-                        <a href="https://github.com/DayDreamingg-g/AI-Customer-Support-Automation">
+                        <a
+                            href="https://github.com/DayDreamingg-g/AI-Customer-Support-Automation"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View AI Customer Support Automation on GitHub"
+                        >
                             View on GitHub
                         </a>
                     </article>
@@ -217,12 +231,17 @@
 
                         <p>
                             AI-powered lead qualification workflow built with n8n,
-                            OpenAI, Google Sheets and Telegram. Scores leads by budget
+                            OpenAI, Google Sheets, and Telegram. Scores leads by budget
                             and urgency, classifies them as Cold/Warm/Hot, and sends
                             priority alerts.
                         </p>
 
-                        <a href="https://github.com/DayDreamingg-g/n8n-ai-lead-automation">
+                        <a
+                            href="https://github.com/DayDreamingg-g/n8n-ai-lead-automation"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View n8n AI Lead Automation on GitHub"
+                        >
                             View on GitHub
                         </a>
                     </article>
@@ -236,7 +255,12 @@
                             history, and supports bot commands.
                         </p>
 
-                        <a href="https://github.com/DayDreamingg-g/n8n-telegram-ai-script-generator">
+                        <a
+                            href="https://github.com/DayDreamingg-g/n8n-telegram-ai-script-generator"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View n8n Telegram AI Script Generator on GitHub"
+                        >
                             View on GitHub
                         </a>
                     </article>
@@ -246,10 +270,15 @@
 
                         <p>
                             Full-stack booking platform for beauty salons built with
-                            Next.js, TypeScript, Prisma and PostgreSQL.
+                            Next.js, TypeScript, Prisma, and PostgreSQL.
                         </p>
 
-                        <a href="https://github.com/DayDreamingg-g/beauty-booking-site">
+                        <a
+                            href="https://github.com/DayDreamingg-g/beauty-booking-site"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View Beauty Booking Platform on GitHub"
+                        >
                             View on GitHub
                         </a>
                     </article>
@@ -258,12 +287,17 @@
                         <h3>TimeMachine.Agent</h3>
 
                         <p>
-                            Windows productivity tracker built with C#/.NET, SQLite
-                            and WinAPI. Tracks active applications, idle time and
+                            Windows productivity tracker built with C#/.NET, SQLite,
+                            and WinAPI. Tracks active applications, idle time, and
                             focus sessions with productivity analytics.
                         </p>
 
-                        <a href="https://github.com/DayDreamingg-g/TimeMachine.Agent">
+                        <a
+                            href="https://github.com/DayDreamingg-g/TimeMachine.Agent"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View TimeMachine.Agent on GitHub"
+                        >
                             View on GitHub
                         </a>
                     </article>
@@ -273,10 +307,15 @@
 
                         <p>
                             Personal cybersecurity learning lab with practical
-                            exercises, notes and reports.
+                            exercises, notes, and reports.
                         </p>
 
-                        <a href="https://github.com/DayDreamingg-g/CyberLab">
+                        <a
+                            href="https://github.com/DayDreamingg-g/CyberLab"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View CyberLab on GitHub"
+                        >
                             View on GitHub
                         </a>
                     </article>
@@ -286,10 +325,15 @@
 
                         <p>
                             Backend financial ledger API built with ASP.NET Core,
-                            Clean Architecture, CQRS, EF Core and automated tests.
+                            Clean Architecture, CQRS, EF Core, and automated tests.
                         </p>
 
-                        <a href="https://github.com/DayDreamingg-g/MiniBank-Ledger-API">
+                        <a
+                            href="https://github.com/DayDreamingg-g/MiniBank-Ledger-API"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View MiniBank Ledger API on GitHub"
+                        >
                             View on GitHub
                         </a>
                     </article>
@@ -302,11 +346,15 @@
                             keyboard hooks in WinAPI.
                         </p>
 
-                        <a href="https://github.com/DayDreamingg-g/keyboard">
+                        <a
+                            href="https://github.com/DayDreamingg-g/keyboard"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View Keyboard Prank App on GitHub"
+                        >
                             View on GitHub
                         </a>
                     </article>
-
                 </div>
             </section>
         </main>
@@ -315,20 +363,33 @@
             <h2>Contact</h2>
 
             <div id="contact">
-                <a href="mailto:oleksandr.stepanov.tech@gmail.com">
+                <a
+                    href="mailto:oleksandr.stepanov.tech@gmail.com"
+                    aria-label="Send an email to Oleksandr Stepanov"
+                >
                     Gmail
                 </a>
 
-                <a href="https://github.com/DayDreamingg-g">
+                <a
+                    href="https://github.com/DayDreamingg-g"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Oleksandr Stepanov's GitHub profile"
+                >
                     GitHub
                 </a>
 
-                <a href="https://www.linkedin.com/in/daydreamingg/">
+                <a
+                    href="https://www.linkedin.com/in/daydreamingg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Oleksandr Stepanov's LinkedIn profile"
+                >
                     LinkedIn
                 </a>
             </div>
 
-            <p>© 2026 Oleksandr Stepanov</p>
+            <p>&copy; 2026 Oleksandr Stepanov</p>
         </footer>
     </body>
 </html>
