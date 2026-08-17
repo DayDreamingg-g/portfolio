@@ -1356,3 +1356,31 @@ h2 {
         background: rgba(36, 33, 45, 0.9);
     }
 }
+
+/* Current project: active job search */
+.activity-progress--indeterminate span {
+    width: 34%;
+    animation: job-search-progress 2.4s ease-in-out infinite;
+}
+
+@keyframes job-search-progress {
+    0% {
+        transform: translateX(-120%);
+    }
+
+    50% {
+        transform: translateX(190%);
+    }
+
+    100% {
+        transform: translateX(390%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .activity-progress--indeterminate span {
+        width: 69%;
+        animation: none;
+        transform: none;
+    }
+}
